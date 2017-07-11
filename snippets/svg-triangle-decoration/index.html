@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Triangle Decoration Demo</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="triangleContainer">
+    <div class="triangleContentArea">
+      <p>Downside is you can't overlay text.</p>
+    </div>
+    <svg id="smallTriangle" class="svgTriangle" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="15 5 80 30" preserveAspectRatio="none">
+      <!--
+
+      viewBox sets the artboard you're working with. The value defines a pair of
+  coordinates on an imaginary grid system with origin 0,0. In this case, we're
+  defining an artboard as the rectangle between (15,5) and (80,30).
+
+      The coordinates are somewhat arbitrary but your paths will be based on
+  the same 0,0 point. In our case we're using this to our advantage to clip
+  the paths where we want them.
+
+      -->
+      <path class="smallTriangle t1" d="M0 0 L55 20 L110 0 Z" />
+      <!--
+
+      d here defines the drawing coordinates for the path. The string defines
+  instructions for how to move and use the 'pen'. In this case: "Move to 0,0.
+  Draw a line to 55,20. Draw a line to 110,0. Draw a line back to origin.
+
+      -->
+      <path class="smallTriangle t2" d="M0 0 L55 20 L110 0 Z" />
+      <path class="smallTriangle t3" d="M0 0 L55 20 L110 0 Z" />
+
+      <!--
+
+      The three paths stack, t1 is on the bottom, t2, then t3.
+
+      -->
+    </svg>
+  </section>
+</body>
+</html>
