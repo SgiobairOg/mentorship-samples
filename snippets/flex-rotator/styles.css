@@ -1,0 +1,113 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #b2483f; }
+
+.wrapper {
+  width: inherit;
+  height: 90vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.roller {
+  width: 100vw;
+  background: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 220px; }
+  .roller__content {
+    min-height: 220px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: top 1s ease-in-out; }
+
+.item__logo {
+  width: 220px;
+  height: 220px;
+  box-sizing: border-box;
+  background: #171717 url("https://logoblink.com/wp-content/uploads/2010/12/helvetica-fake-logos.png");
+  background-repeat: no-repeat; }
+  .item__logo--1 {
+    background-position-x: -135px;
+    background-position-y: -145px;
+    order: 1; }
+  .item__logo--2 {
+    background-position-x: -370px;
+    background-position-y: -145px;
+    order: 2; }
+  .item__logo--3 {
+    background-position-x: -605px;
+    background-position-y: -145px;
+    order: 3; }
+  .item__logo--4 {
+    background-position-x: -840px;
+    background-position-y: -145px;
+    order: 4; }
+  .item__logo--5 {
+    background-position-x: -1075px;
+    background-position-y: -145px;
+    order: 5; }
+  .item__logo--6 {
+    background-position-x: -1310px;
+    background-position-y: -145px;
+    order: 6; }
+  .item__logo--7 {
+    background-position-x: -135px;
+    background-position-y: -380px;
+    order: 7; }
+  .item__logo--8 {
+    background-position-x: -370px;
+    background-position-y: -380px;
+    order: 8; }
+  .item__logo--9 {
+    background-position-x: -605px;
+    background-position-y: -380px;
+    order: 9; }
+  .item__logo--10 {
+    background-position-x: -840px;
+    background-position-y: -380px;
+    order: 10; }
+  .item__logo--11 {
+    background-position-x: -1075px;
+    background-position-y: -380px;
+    order: 11; }
+  .item__logo--12 {
+    background-position-x: -1310px;
+    background-position-y: -380px;
+    order: 12; }
+  .item__logo--13 {
+    background-position-x: -135px;
+    background-position-y: -615px;
+    order: 13; }
+  .item__logo--14 {
+    background-position-x: -370px;
+    background-position-y: -615px;
+    order: 14; }
+
+.attribution {
+  background: rgba(0, 0, 0, 0.4);
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.attribution__link {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 100;
+  margin: auto 1em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+/*# sourceMappingURL=styles.css.map */

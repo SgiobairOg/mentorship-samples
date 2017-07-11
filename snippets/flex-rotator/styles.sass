@@ -1,0 +1,105 @@
+$sprites:"https://logoblink.com/wp-content/uploads/2010/12/helvetica-fake-logos.png"
+
+=sprite($col, $row)
+  background-position-x: -135px - (( $col - 1 ) * 235px)
+  background-position-y: -145px - (( $row - 1 ) * 235px)
+
+html, body
+  width: 100vw
+  height: 100vh
+  overflow-x: hidden
+  background: rgb(178,72,63)
+
+.wrapper
+  width: inherit
+  height: 90vh
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+
+.roller
+  width: 100vw
+  background: white
+  padding: 0
+  margin: 0
+  overflow: hidden
+  position: relative
+  min-height: 220px
+
+  &__content
+    min-height: 220px
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    overflow: hidden
+    position: absolute
+    top: 0
+    transition: top 1s ease-in-out
+
+.item__logo
+  width: 220px
+  height: 220px
+  box-sizing: border-box
+  background: rgb(23,23,23) url($sprites)
+  background-repeat: no-repeat
+
+  &--1
+    +sprite(1,1)
+    order: 1
+  &--2
+    +sprite(2, 1)
+    order: 2
+  &--3
+    +sprite(3, 1)
+    order: 3
+  &--4
+    +sprite(4, 1)
+    order: 4
+  &--5
+    +sprite(5, 1)
+    order: 5
+  &--6
+    +sprite(6, 1)
+    order: 6
+  &--7
+    +sprite(1, 2)
+    order: 7
+  &--8
+    +sprite(2, 2)
+    order: 8
+  &--9
+    +sprite(3, 2)
+    order: 9
+  &--10
+    +sprite(4, 2)
+    order: 10
+  &--11
+    +sprite(5, 2)
+    order: 11
+  &--12
+    +sprite(6, 2)
+    order: 12
+  &--13
+    +sprite(1, 3)
+    order: 13
+  &--14
+    +sprite(2, 3)
+    order: 14
+
+.attribution
+  background: rgba(0,0,0,.4)
+  height: 10vh
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+.attribution__link
+  color: rgba(255,255,255,.7)
+  font-family: Georgia, serif
+  font-style: italic
+  font-weight: 100
+  margin: auto 1em
+  text-decoration: none
+  border-bottom: 1px solid rgba(255,255,255,.2)
